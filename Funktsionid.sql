@@ -84,6 +84,23 @@ select dbo.fn_getemployeenamebyid1(10);
 
 
 
+--Nüüd muudame funktsiooni ja krüpteerime selle ära(fn_getemployeenamebyid1):
+alter function fn_getemployeenamebyid1(@employeekey int)
+returns nvarchar(20)
+with schemabinding
+as
+begin
+    return (
+        select firstname 
+        from dimemployee 
+        where employeekey = @employeekey
+    );
+end;
+go
+
+--kaivita funktrsiooni 
+select dbo.fn_getemployeenamebyid1(10);
+
 
 --Loome funktsiooni WITH SCHEMABINDING valikuga
 
