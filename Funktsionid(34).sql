@@ -33,3 +33,8 @@ end
 
 --käivitamine
 exec spCreateLocalTempTable;
+
+
+
+--globaalse ajutise tabeli loomine
+create table ##EmployeeDetails (Id int, Name nvarchar(20))
