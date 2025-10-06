@@ -31,7 +31,7 @@ insert into #PersonDetails1 values (3, 'Todd')
 select * from #PersonDetails1
 end
 
---k‰ivitamine
+--k√§ivitamine
 exec spCreateLocalTempTable;
 
 
