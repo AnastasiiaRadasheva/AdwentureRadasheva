@@ -3,13 +3,12 @@ select * from DimCustomer;
 
 --Soovime leida kõik töölised, kelle palk on vahemikus 20000 kuni 70000. 
 Select * from DimCustomer where YearlyIncome > 20000 and YearlyIncome < 70000
- 
- 
- --üldise tulu indeksi loomine
-create Index IX_tblDimCustomer_YearlyIncome
-on DimCustomer (YearlyIncome ASC)
 
- --vaadata indeksit
+--Nüüd loome indeksi, mis aitab päringut
+create index IX_tbDimCustomer_Salary
+on DimCustomer ( YearlyIncome asc)
+
+--vaadata indeksit
 execute sp_helptext DimCustomer
 
 --kustutada indeksit
