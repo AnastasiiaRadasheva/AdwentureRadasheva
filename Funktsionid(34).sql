@@ -9,6 +9,12 @@ insert into #PersonDetails1 values (3, 'Todd')
 select * from #PersonDetails1
 
 
+
+--c
+Select name from tempdb..sysobjects
+where name like '#PersonDetails1%'
+
+
 --tabeli kustutamine
 drop table #PersonDetails1
 
