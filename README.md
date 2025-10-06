@@ -8,8 +8,13 @@
 --Skaleeritav funktsioon ilma krüpteerimata:(33)
 <img width="738" height="335" alt="{5C303804-E9EC-4D31-8266-E4D57D277E28}" src="https://github.com/user-attachments/assets/a091556a-5ec9-4421-8040-d5233be799cb" />
 
-
-
---Loome funktsiooni WITH SCHEMABINDING valikuga
+--Loome funktsiooni WITH SCHEMABINDING valikuga(33)
 <img width="684" height="445" alt="{484CF67D-48F3-4DAF-B62B-6A3E14702073}" src="https://github.com/user-attachments/assets/f66eddd6-e3ce-4f46-b9be-cb9b896d9bf3" />
 
+------------------------------------------------------------------------------------------------------------------------------
+
+----loome Local tabeli PersonDetails (34)
+<img width="734" height="394" alt="{84C8BF2B-E68B-437A-8393-52191758D370}" src="https://github.com/user-attachments/assets/f3fff3a1-58fc-4cbe-8ad8-9c4769390aae" />
+
+---protseduuri loomine kohaliku tabeli loomiseks
+<img width="524" height="413" alt="{66D3B0C3-7162-49DC-826F-526DE88672D2}" src="https://github.com/user-attachments/assets/3cbb0c9d-ff49-41bb-99fd-775593048644" />
