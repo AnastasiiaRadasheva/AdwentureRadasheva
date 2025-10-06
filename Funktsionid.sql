@@ -82,3 +82,32 @@ go
 --kaivita funktrsiooni 
 select dbo.fn_getemployeenamebyid1(10);
 
+
+
+
+--Loome funktsiooni WITH SCHEMABINDING valikuga
+
+create function dbo.fn_getemployeenamebyid_sb(@employeekey int)
+returns nvarchar(20)
+with schemabinding
+as
+begin
+    declare @name nvarchar(20);
+
+    select @name = firstname
+    from dbo.DimEmployee
+    where employeekey = @employeekey;
+
+    return @name;
+end;
+go
+
+
+--kaivita funktrsiooni 
+select dbo.fn_getemployeenamebyid_sb(10);
+
+
+--Proovi tabelit kustutada
+drop table dbo.DimEmployee;
+--SQL Server kuvab vea:
+--Cannot drop table 'dbo.DimEmployee' because it is being referenced by object 'fn_getemployeenamebyid_sb'.
