@@ -7,5 +7,9 @@
 
 --Skaleeritav funktsioon ilma krüpteerimata:(33)
 <img width="738" height="335" alt="{5C303804-E9EC-4D31-8266-E4D57D277E28}" src="https://github.com/user-attachments/assets/a091556a-5ec9-4421-8040-d5233be799cb" />
--- ja 
+
+
+
+--Loome funktsiooni WITH SCHEMABINDING valikuga
+<img width="684" height="445" alt="{484CF67D-48F3-4DAF-B62B-6A3E14702073}" src="https://github.com/user-attachments/assets/f66eddd6-e3ce-4f46-b9be-cb9b896d9bf3" />
 
