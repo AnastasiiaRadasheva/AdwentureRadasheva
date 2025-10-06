@@ -16,5 +16,6 @@
 ----loome Local tabeli PersonDetails (34)
 <img width="734" height="394" alt="{84C8BF2B-E68B-437A-8393-52191758D370}" src="https://github.com/user-attachments/assets/f3fff3a1-58fc-4cbe-8ad8-9c4769390aae" />
 
----protseduuri loomine kohaliku tabeli loomiseks
+---protseduuri loomine kohaliku tabeli loomiseks(34)
+
 <img width="524" height="413" alt="{66D3B0C3-7162-49DC-826F-526DE88672D2}" src="https://github.com/user-attachments/assets/3cbb0c9d-ff49-41bb-99fd-775593048644" />
