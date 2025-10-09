@@ -62,3 +62,19 @@ select * from vWEmployeesNonConfidentialData
 --Samas on võimalik kustutada ridu baastabelis ning kasutada view-d.
 delete from vWEmployeesNonConfidentialData where EmployeeKey = 2
 select * from vWEmployeesNonConfidentialData
+
+
+
+-- Loome view, mis ühendab kaks eelpool käsitletud tabelit ja annab sellise tulemuse
+create view vwEmployeesDetailsByCountry
+as 
+Select EmployeeKey, FirstName, Gender,SalesTerritoryRegion
+from DimEmployee t
+join DimSalesTerritory tk
+on t.SalesTerritoryKey= tk.SalesTerritoryKey 
+
+select * from vwEmployeesDetailsByCountry
+--uuendamine
+update vwEmployeesDetailsByCountry
+set SalesTerritoryRegion = 'Canada' where FirstName = 'John'
+select * from vwEmployeesDetailsByCountry
