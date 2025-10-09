@@ -29,3 +29,18 @@ join DimSalesTerritory tk
 on t.SalesTerritoryKey= tk.SalesTerritoryKey 
 --käivitama view
 select * from vWEmployeesNonConfidentialData
+
+
+
+--lisa view,vWEmployeesCountBySalesTerritory  mis näed sales territory Region, arv empoyees
+create view vWEmployeesCountBySalesTerritory
+as
+Select SalesTerritoryRegion, count(EmployeeKey) as TotalEmployees
+from DimEmployee t
+join DimSalesTerritory tk
+on t.SalesTerritoryKey= tk.SalesTerritoryKey 
+group By SalesTerritoryRegion
+
+
+--käivitama view
+select * from vWEmployeesCountBySalesTerritory
