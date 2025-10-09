@@ -56,3 +56,21 @@ execute sp_helpindex tblEmployee;
 --veeru Id indeksi kustutamine
 drop index tblEmployee.IX_tblEmployee_Id
 
+
+--unikaalne indeks, mis tagab, et veerus Name ei esineks korduvaid andmeid
+create unique NonClustered Index UIX_tblEmployee_Name
+on tblEmployee(Name)
+
+--unikaalse piirangu lisamine veerule City
+alter table tblEmployee
+add constraint UQ_tblEmployee_City
+Unique NonClustered (City)
+
+
+execute sp_helpconstraint tblEmployee;
+
+--indeks, mis ei luba veerus korduvaid andmeid
+Create unique Index IX_tblEmployee_City
+On tblEmployee(City)
+with ignore_dup_key
+
