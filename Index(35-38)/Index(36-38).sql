@@ -43,3 +43,16 @@ DROP INDEX IX_tblEmployee_Name ON tblEmployee1;
 
 
 EXEC sp_helpconstraint 'tblEmployee1';
+
+
+--37. Unikaalne ja mitte-unikaalne indeks
+--indeksi loomine veeru Id jaoks
+create clustered Index IX_tblEmployee_Id
+on tblEmployee(Id)
+
+--esmase võtme kontroll
+execute sp_helpindex tblEmployee;
+
+--veeru Id indeksi kustutamine
+drop index tblEmployee.IX_tblEmployee_Id
+
