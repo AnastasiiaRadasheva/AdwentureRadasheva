@@ -44,3 +44,21 @@ group By SalesTerritoryRegion
 
 --käivitama vieww
 select * from vWEmployeesCountBySalesTerritory
+
+
+
+
+
+--40. View uuendused
+
+
+--päring uuendab Name veerus olevat nime Mike Mikey peale
+update vWEmployeesNonConfidentialData
+set FirstName = 'Mikey' Where EmployeeKey = 2
+select * from vWEmployeesNonConfidentialData
+
+
+
+--Samas on võimalik kustutada ridu baastabelis ning kasutada view-d.
+delete from vWEmployeesNonConfidentialData where EmployeeKey = 2
+select * from vWEmployeesNonConfidentialData
