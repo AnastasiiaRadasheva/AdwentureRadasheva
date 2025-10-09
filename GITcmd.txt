@@ -53,3 +53,14 @@ Total 4 (delta 1), reused 1 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:AnastasiiaRadasheva/AdwentureRadasheva.git
  + 24c8718...2025e50 main -> main (forced update)
+
+
+C:\Users\opilane\Desktop\AdwentureRadasheva>git checkout neljapaev
+branch 'neljapaev' set up to track 'origin/neljapaev'.
+Switched to a new branch 'neljapaev'
+
+C:\Users\opilane\Desktop\AdwentureRadasheva>git status
+On branch neljapaev
+Your branch is up to date with 'origin/neljapaev'.
+
+nothing to commit, working tree clean
