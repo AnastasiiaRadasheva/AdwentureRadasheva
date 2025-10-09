@@ -74,3 +74,27 @@ Create unique Index IX_tblEmployee_City
 On tblEmployee(City)
 with ignore_dup_key
 
+
+
+--38. Indeksi plussid ja miinused
+--mitte-klastreeritud indeks Salary veerule
+
+create NonClustered Index IX_tblEmployee_Salary
+on tblEmployee (Salary Asc)
+
+
+select * from tblEmployee where Salary > 4000 and Salary < 8000
+delete from tblEmployee where Salary=2500
+update tblEmployee set Salary = 9000 where Salary = 7000
+
+--palga sortimine kasvavas järjekorras
+select * from tblEmployee order by Salary
+
+--palga sortimine kahanevas järjekorras
+select * from tblEmployee order by Salary desc
+
+--GROUP BY Salary indeksi abil
+select Salary, COUNT(Salary) as Total
+from tblEmployee
+group by Salary
+
