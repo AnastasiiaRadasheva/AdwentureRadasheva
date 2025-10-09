@@ -42,5 +42,5 @@ on t.SalesTerritoryKey= tk.SalesTerritoryKey
 group By SalesTerritoryRegion
 
 
---käivitama view
+--käivitama vieww
 select * from vWEmployeesCountBySalesTerritory
