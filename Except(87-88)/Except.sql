@@ -66,3 +66,19 @@ select Id, Name, Gender, Salary
 from tblEmployees
 where Salary>=60000
 order by name
+
+
+
+
+--88. Erinevus Except ja not in operaatoril
+
+
+--Järgnev päring tagastab read vasakust päringust, mis ei ole paremas tabelis
+select Id, Name, Gender from TableA
+except
+select Id, Name, Gender from TableB
+
+--Sama tulemuse võib saavutada NOT IN operaatoriga:
+
+select Id, Name, Gender from TableA
+where Id NOT IN (select Id from TableB)
