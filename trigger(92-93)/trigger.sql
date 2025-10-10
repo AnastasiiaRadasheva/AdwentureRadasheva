@@ -58,3 +58,23 @@ begin
 rollback
 print 'You cannot create, alter or drop a table in the current database'
 end
+
+
+--Loo serveri vahemikus olev DDL trigger 
+create trigger tr_ServerScopeTrigger
+on all server
+for CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+as
+begin
+rollback
+print 'You cannot create, alter or drop a table in any database on the server'
+end
+
+--üldserveri DDL-päästiku sulgemine
+disable trigger tr_ServerScopeTrigger on all server
+
+--üldserveri DDL-päästiku avamine
+enable trigger tr_ServerScopeTrigger on all server
+
+--kustutamine
+drop trigger tr_ServerScopeTrigger on all server
