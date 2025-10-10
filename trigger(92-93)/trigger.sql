@@ -1,7 +1,7 @@
 --92. DDL Trigger SQL serveris
 
 
---trigger käivitab vastuseks CREATE_TABLE .
+--trigger käivitab vastuseks CREATE_TABLE 
 Create trigger trMyFirstTrigger
 on database
 for CREATE_TABLE
