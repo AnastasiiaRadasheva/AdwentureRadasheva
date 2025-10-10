@@ -82,3 +82,22 @@ select Id, Name, Gender from TableB
 
 select Id, Name, Gender from TableA
 where Id NOT IN (select Id from TableB)
+
+
+
+--tagastab read vasakust päringust, mis ei ole paremas tabelis(tblEmployees)
+select Id, Name, Gender from tblEmployees
+except 
+select Id, Name, Gender from tblEmployees
+
+select Id, Name, Gender from tblEmployees
+where Id Not In (select Id from tblEmployees)
+
+
+select Id, Name, Gender from tblEmployees
+except 
+select Id, Name, Gender from tblEmployees
+
+select Id, Name, Gender from tblEmployees
+where Id Not In (select Id from tblEmployees)
+
