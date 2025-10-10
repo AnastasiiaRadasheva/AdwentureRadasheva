@@ -2,6 +2,7 @@
 
 
 --trigger käivitab vastuseks CREATE_TABLE 
+
 Create trigger trMyFirstTrigger
 on database
 for CREATE_TABLE
@@ -39,4 +40,21 @@ for rename
 as
 begin
 print 'You just renames something'
+end
+
+
+--93. Server-Scoped DDL triggerid
+
+
+--93
+--Server Scoped DDL trigger
+
+-- Trigger ei luba luua, muuta ja kustutada tabeleid andmebaasist sinna, kuhu see on loodud.
+create trigger tr_DatabaseScopeTrigger
+on database
+for CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+as
+begin
+rollback
+print 'You cannot create, alter or drop a table in the current database'
 end
