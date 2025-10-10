@@ -133,3 +133,17 @@ select Product, SUM (SaleAmount) as TotalSales
 from Sales
 Group by Product
 WHERE Sum(SaleAmount) > 1000
+
+
+
+--mis näitavad summat ning eemaldavad kõik tooted peale iPhone-i ja Speakerite
+select Product, SUM (SaleAmount) as TotalSales
+from Sales
+where Product in ('Iphone', 'Speakers')
+Group by Product
+
+--süntaksivea
+select Product, SUM (SaleAmount) as TotalSales
+from Sales
+Group by Product
+where Product in ('Iphone', 'Speakers')
