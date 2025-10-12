@@ -7,7 +7,8 @@ protseduuri
 
 ---protseduuri loomine kohaliku tabeli loomiseks(34)
 
-<img width="524" height="413" alt="{66D3B0C3-7162-49DC-826F-526DE88672D2}" src="https://github.com/user-attachments/assets/3cbb0c9d-ff49-41bb-99fd-775593048644" />
+<img width="377" height="221" alt="image" src="https://github.com/user-attachments/assets/6498caf6-7545-4658-88fb-7909093390dd" />
+
 
 ------------------------------------------------------------------------------------------------------------------------------
 
