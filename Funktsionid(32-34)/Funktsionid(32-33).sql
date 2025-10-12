@@ -4,7 +4,7 @@
 select * from DimEmployee;
 
 
---Tabelisiseväärtusega funktsioon e Inline Table Valued function (ILTVF) koodinäide:
+--TabelisisevÃ¤Ã¤rtusega funktsioon e Inline Table Valued function (ILTVF) koodinÃ¤ide:
 
 create function fn_ILVF_GetEmployees()
 
@@ -20,8 +20,8 @@ select * from fn_ILVF_GetEmployees()
 
 
 
---Mitme avaldisega tabeliväärtusega funktsioonid e multi-statement table valued function (MSTVF):
-create function fn_ILVF_GetEmployees()
+--Mitme avaldisega tabelivÃ¤Ã¤rtusega funktsioonid e multi-statement table valued function (MSTVF):
+create function fn_MSTVF_GetEmployees()
 returns @table table(employeekey int, firstname nvarchar(20), dob date)
 as
 begin
@@ -41,11 +41,18 @@ go
 select * from fn_ILVF_GetEmployees()
 
 
+
+
+--kÃ¤ivita funtsioonid
+Select * from fn_MSTVF_GetEmployees()
+Update fn_ILTVF_GetEmployees() set FirstName='Sam' where EmployeeKey=1;
+
+
 --FUNK #33
 
 
 
---Skaleeritav funktsioon ilma krüpteerimata:
+--Skaleeritav funktsioon ilma krÃ¼pteerimata:
 create function fn_getemployeenamebyId1(@employeekey int)
 returns nvarchar(20)
 as
@@ -63,7 +70,7 @@ select dbo.fn_getemployeenamebyid1(3);
 
 
 
---Nüüd muudame funktsiooni ja krüpteerime selle ära:
+--NÃ¼Ã¼d muudame funktsiooni ja krÃ¼pteerime selle Ã¤ra:
 
 alter function fn_getemployeenamebyid1(@employeekey int)
 returns nvarchar(20)
@@ -84,7 +91,7 @@ select dbo.fn_getemployeenamebyid1(10);
 
 
 
---Nüüd muudame funktsiooni ja krüpteerime selle ära(fn_getemployeenamebyid1):
+--NÃ¼Ã¼d muudame funktsiooni ja krÃ¼pteerime selle Ã¤ra(fn_getemployeenamebyid1):
 alter function fn_getemployeenamebyid1(@employeekey int)
 returns nvarchar(20)
 with schemabinding
