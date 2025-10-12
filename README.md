@@ -1,21 +1,43 @@
+Funktsioonid
 
---Tabelisiseväärtusega funktsioon e Inline Table Valued function (ILTVF) koodinäide: (32)
-<img width="967" height="501" alt="{6C480B2A-FBF9-4D14-9901-3A44C1B889D4}" src="https://github.com/user-attachments/assets/a4582943-ebb9-42c8-91a2-da504f1c3244" />
-
---Mitme avaldisega tabeliväärtusega funktsioonid e multi-statement table valued function (MSTVF): (32)
-<img width="850" height="593" alt="{B4CA3521-EB6B-4737-8492-F69FA4B9E9AB}" src="https://github.com/user-attachments/assets/5fae5c8a-f7ed-4a4d-98f0-e25fdb6a3f57" />
-
---Skaleeritav funktsioon ilma krüpteerimata:(33)
-<img width="738" height="335" alt="{5C303804-E9EC-4D31-8266-E4D57D277E28}" src="https://github.com/user-attachments/assets/a091556a-5ec9-4421-8040-d5233be799cb" />
-
---Loome funktsiooni WITH SCHEMABINDING valikuga(33)
-<img width="684" height="445" alt="{484CF67D-48F3-4DAF-B62B-6A3E14702073}" src="https://github.com/user-attachments/assets/f66eddd6-e3ce-4f46-b9be-cb9b896d9bf3" />
+<img width="416" height="395" alt="image" src="https://github.com/user-attachments/assets/eab6137d-4207-4410-9f0b-aada045d8a54" />
 
 ------------------------------------------------------------------------------------------------------------------------------
-
-----loome Local tabeli PersonDetails (34)
-<img width="734" height="394" alt="{84C8BF2B-E68B-437A-8393-52191758D370}" src="https://github.com/user-attachments/assets/f3fff3a1-58fc-4cbe-8ad8-9c4769390aae" />
+protseduuri
 
 ---protseduuri loomine kohaliku tabeli loomiseks(34)
 
 <img width="524" height="413" alt="{66D3B0C3-7162-49DC-826F-526DE88672D2}" src="https://github.com/user-attachments/assets/3cbb0c9d-ff49-41bb-99fd-775593048644" />
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Local ja ajutised Tabelid
+
+<img width="345" height="310" alt="image" src="https://github.com/user-attachments/assets/4cc6fb73-e786-4dd9-a483-31799615eaa7" />
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+INDEX
+
+Indeksid DimCustomer
+<img width="542" height="225" alt="image" src="https://github.com/user-attachments/assets/a5266168-2a56-439c-be84-ce14528c393f" />
+
+Indeksid tblEmployee
+<img width="451" height="247" alt="image" src="https://github.com/user-attachments/assets/36b48910-6d8c-4daa-a0fc-56f650e6ce3d" />
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+VIEW
+<img width="390" height="323" alt="image" src="https://github.com/user-attachments/assets/91f6e089-d27e-4311-87bf-6d7ba0d071f6" />
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Triggerid
+
+<img width="292" height="314" alt="image" src="https://github.com/user-attachments/assets/ec1f8e36-c3ab-471c-8f3d-e33b7ff0c0d4" />
+
+
