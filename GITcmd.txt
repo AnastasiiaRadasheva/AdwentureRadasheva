@@ -1,4 +1,5 @@
 C:\Users\opilane\Desktop>git init AdwentureRadasheva
+ssh-keygen -o -t rsa -C "eha20082@gmail.com"
 Initialized empty Git repository in C:/Users/opilane/Desktop/AdwentureRadasheva/.git/
 
 C:\Users\opilane\Desktop>cd
