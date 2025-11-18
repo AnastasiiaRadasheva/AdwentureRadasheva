@@ -64,4 +64,9 @@ C:\Users\opilane\Desktop\AdwentureRadasheva>git status
 On branch neljapaev
 Your branch is up to date with 'origin/neljapaev'.
 
+
+git remote add origin git@github.com:AnastasiiaRadasheva/veebPHP.git
+git branch -M main
+git push -u origin main
+
 nothing to commit, working tree clean
